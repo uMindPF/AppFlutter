@@ -1,0 +1,49 @@
+{
+  "pictogramas" : [
+    {
+      "nombre": "Beber",
+      "texto": "beber",
+      "url": "assets/pictogramas/acciones/beber.png"
+    },
+    {
+      "nombre": "Comer",
+      "texto": "comer",
+      "url": "assets/pictogramas/acciones/comer.png"
+    },
+    {
+      "nombre": "Dibujar",
+      "texto": "dibujar",
+      "url": "assets/pictogramas/acciones/dibujar.png"
+    },
+    {
+      "nombre": "Dormir",
+      "texto": "dormir",
+      "url": "assets/pictogramas/acciones/dormir.png"
+    },
+    {
+      "nombre": "Ir al cole",
+      "texto": "ir al cole",
+      "url": "assets/pictogramas/acciones/irAlCole.png"
+    },
+    {
+      "nombre": "Ir al parque",
+      "texto": "ir al parque",
+      "url": "assets/pictogramas/acciones/irAlParque.png"
+    },
+    {
+      "nombre": "Jugar",
+      "texto": "jugar",
+      "url": "assets/pictogramas/acciones/jugar.png"
+    },
+    {
+      "nombre": "Jugar videojuegos",
+      "texto": "jugar videojuegos",
+      "url": "assets/pictogramas/acciones/jugarVideojuegos.png"
+    },
+    {
+      "nombre": "Ver la televisión",
+      "texto": "ver la televisión",
+      "url": "assets/pictogramas/acciones/verLaTelevision.png"
+    }
+  ]
+}

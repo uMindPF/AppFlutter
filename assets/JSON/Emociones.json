@@ -1,0 +1,9 @@
+{
+  "pictogramas" : [
+    {
+      "nombre": "Asustado",
+      "texto": "asustado",
+      "url": "assets/pictogramas/emociones/asustado.png"
+    }
+  ]
+}

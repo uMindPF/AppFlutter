@@ -1,0 +1,9 @@
+{
+  "pictogramas" : [
+    {
+      "nombre": "Uno",
+      "texto": "uno",
+      "url": "assets/pictogramas/numeros/1.png"
+    }
+  ]
+}
