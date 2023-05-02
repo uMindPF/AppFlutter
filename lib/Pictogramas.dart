@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:proyecto/Text.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 
 import 'Pictograma.dart';
 
@@ -38,24 +39,6 @@ class PictogramasPage extends State<Pictogramas> {
               },
               child: const Text('Limpiar'),
             ),
-
-            /*
-            Text("Json" + pictogramas[0].texto),
-            GestureDetector(
-              onTap: () {
-                print('Image Clicked');
-                setState(() {
-                  Frase.addPalabra("Hola");
-                });
-              },
-              child: Image.network(
-                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
-                width: 100,
-                height: 100,
-              ),
-            ),
-            */
-            // foreach of pictogramas
             Expanded(
               child: GridView.count(
                 crossAxisCount: 3,
@@ -66,6 +49,10 @@ class PictogramasPage extends State<Pictogramas> {
                       setState(() {
                         Frase.addPalabra(pictogramas[index].texto);
                       });
+
+                      FlutterTts flutterTts = FlutterTts();
+                      flutterTts.setLanguage("es-ES");
+                      flutterTts.speak(Frase.fraseText);
                     },
                     child: Image.asset(
                       pictogramas[index].url,

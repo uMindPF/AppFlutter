@@ -12,7 +12,13 @@ class Frase {
   }
 
   static void addPalabra(String palabra) {
-    fraseText = fraseText + " " + palabra;
+
+    if (fraseText == "") {
+      fraseText = palabra[0].toUpperCase() + palabra.substring(1);
+      return;
+    }
+
+    fraseText += " " + palabra;
   }
 
   static void limpiarFrase() {
