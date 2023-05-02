@@ -4,6 +4,46 @@
       "nombre": "Uno",
       "texto": "uno",
       "url": "assets/pictogramas/numeros/1.png"
+    },
+    {
+      "nombre": "Dos",
+      "texto": "dos",
+      "url": "assets/pictogramas/numeros/2.png"
+    },
+    {
+      "nombre": "Tres",
+      "texto": "tres",
+      "url": "assets/pictogramas/numeros/3.png"
+    },
+    {
+      "nombre": "Cuatro",
+      "texto": "cuatro",
+      "url": "assets/pictogramas/numeros/4.png"
+    },
+    {
+      "nombre": "Cinco",
+      "texto": "cinco",
+      "url": "assets/pictogramas/numeros/5.png"
+    },
+    {
+      "nombre": "Seis",
+      "texto": "seis",
+      "url": "assets/pictogramas/numeros/6.png"
+    },
+    {
+      "nombre": "Siete",
+      "texto": "siete",
+      "url": "assets/pictogramas/numeros/7.png"
+    },
+    {
+      "nombre": "Ocho",
+      "texto": "ocho",
+      "url": "assets/pictogramas/numeros/8.png"
+    },
+    {
+      "nombre": "Nueve",
+      "texto": "nueve",
+      "url": "assets/pictogramas/numeros/9.png"
     }
   ]
 }

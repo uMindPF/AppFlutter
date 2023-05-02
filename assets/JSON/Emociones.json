@@ -4,6 +4,56 @@
       "nombre": "Asustado",
       "texto": "asustado",
       "url": "assets/pictogramas/emociones/asustado.png"
+    },
+    {
+      "nombre": "Bien",
+      "texto": "bien",
+      "url": "assets/pictogramas/emociones/bien.png"
+    },
+    {
+      "nombre": "Confuso",
+      "texto": "confuso",
+      "url": "assets/pictogramas/emociones/confuso.png"
+    },
+    {
+      "nombre": "Contento",
+      "texto": "contento",
+      "url": "assets/pictogramas/emociones/contento.png"
+    },
+    {
+      "nombre": "Enfadado",
+      "texto": "enfadado",
+      "url": "assets/pictogramas/emociones/enfadado.png"
+    },
+    {
+      "nombre": "Mal",
+      "texto": "mal",
+      "url": "assets/pictogramas/emociones/mal.png"
+    },
+    {
+      "nombre": "Necesito",
+      "texto": "necesito",
+      "url": "assets/pictogramas/emociones/necesito.png"
+    },
+    {
+      "nombre": "No gustar",
+      "texto": "no gustar",
+      "url": "assets/pictogramas/emociones/noGustar.png"
+    },
+    {
+      "nombre": "No quiero",
+      "texto": "no quiero",
+      "url": "assets/pictogramas/emociones/noQuiero.png"
+    },
+    {
+      "nombre": "Quiero",
+      "texto": "quiero",
+      "url": "assets/pictogramas/emociones/quiero.png"
+    },
+    {
+      "nombre": "Triste",
+      "texto": "triste",
+      "url": "assets/pictogramas/emociones/triste.png"
     }
   ]
 }

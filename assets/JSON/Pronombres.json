@@ -4,6 +4,46 @@
       "nombre": "El",
       "texto": "el",
       "url": "assets/pictogramas/pronombres/el.png"
+    },
+    {
+      "nombre": "Ella",
+      "texto": "ella",
+      "url": "assets/pictogramas/pronombres/ella.png"
+    },
+    {
+      "nombre": "Ellos",
+      "texto": "ellos",
+      "url": "assets/pictogramas/pronombres/ellos.png"
+    },
+    {
+      "nombre": "Nosotras",
+      "texto": "nosotras",
+      "url": "assets/pictogramas/pronombres/nosotras.png"
+    },
+    {
+      "nombre": "Nosotros",
+      "texto": "nosotros",
+      "url": "assets/pictogramas/pronombres/nosotros.png"
+    },
+    {
+      "nombre": "Tu",
+      "texto": "tu",
+      "url": "assets/pictogramas/pronombres/tu.png"
+    },
+    {
+      "nombre": "Vosotras",
+      "texto": "vosotras",
+      "url": "assets/pictogramas/pronombres/vosotras.png"
+    },
+    {
+      "nombre": "Vosotros",
+      "texto": "vosotros",
+      "url": "assets/pictogramas/pronombres/vosotros.png"
+    },
+    {
+      "nombre": "Yo",
+      "texto": "yo",
+      "url": "assets/pictogramas/pronombres/yo.png"
     }
   ]
 }

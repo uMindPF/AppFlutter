@@ -2,8 +2,28 @@
   "pictogramas" : [
     {
       "nombre": "Adios",
-      "texto": "Adios",
+      "texto": "adios",
       "url": "assets/pictogramas/expresiones/adios.png"
+    },
+    {
+      "nombre": "Gracias",
+      "texto": "gracias",
+      "url": "assets/pictogramas/expresiones/gracias.png"
+    },
+    {
+      "nombre": "Hola",
+      "texto": "hola",
+      "url": "assets/pictogramas/expresiones/hola.png"
+    },
+    {
+      "nombre": "No",
+      "texto": "no",
+      "url": "assets/pictogramas/expresiones/no.png"
+    },
+    {
+      "nombre": "Si",
+      "texto": "si",
+      "url": "assets/pictogramas/expresiones/si.png"
     }
   ]
 }
