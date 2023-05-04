@@ -35,8 +35,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int currentIndex = 0;
 
-  String fraseText = "Hola";
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,9 +59,11 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
         onTap: (index) {
-          setState(() {
-            currentIndex = index;
-          });
+          if  (currentIndex != index) {
+            setState(() {
+              currentIndex = index;
+            });
+          }
         },
         fixedColor: Colors.blue,
         unselectedItemColor: Colors.grey,
