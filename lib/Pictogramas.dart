@@ -30,11 +30,19 @@ class PictogramasPage extends State<Pictogramas> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: FrasePictogramas.getImages(),
+            Container(
+              constraints: BoxConstraints(minHeight: 100),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: FrasePictogramas.getImages(),
+              ),
             ),
-            Text(FrasePictogramas.getFrase()),
+            ConstrainedBox(
+              constraints: BoxConstraints(minHeight: 20),
+              child: Text(
+                FrasePictogramas.getFrase(),
+              ),
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -56,6 +64,13 @@ class PictogramasPage extends State<Pictogramas> {
                   },
                   child: const Text('Reproducir'),
                 ),
+                ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        FrasePictogramas.retroceder();
+                      });
+                    },
+                    child: const Text('Retroceder')),
               ],
             ),
             Expanded(

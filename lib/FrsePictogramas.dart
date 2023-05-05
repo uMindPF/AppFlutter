@@ -6,7 +6,10 @@ class FrasePictogramas {
   static List<Pictograma> frasePictogramas = [];
 
   static void addPictograma(Pictograma pictograma) {
-    if (frasePictogramas.length <= 6) {
+    if (frasePictogramas.length < 6) {
+      frasePictogramas.add(pictograma);
+    } else {
+      frasePictogramas.removeAt(0);
       frasePictogramas.add(pictograma);
     }
   }
@@ -37,5 +40,11 @@ class FrasePictogramas {
         .join(' ');
     frase = frase[0].toUpperCase() + frase.substring(1);
     return frase;
+  }
+
+  static void retroceder() {
+    if (frasePictogramas.length > 0) {
+      frasePictogramas.removeLast();
+    }
   }
 }
