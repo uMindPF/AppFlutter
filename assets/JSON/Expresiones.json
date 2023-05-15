@@ -3,27 +3,32 @@
     {
       "nombre": "Adios",
       "texto": "adios",
-      "url": "assets/pictogramas/expresiones/adios.png"
+      "url": "assets/pictogramas/expresiones/adios.png",
+      "categoria": "expresiones"
     },
     {
       "nombre": "Gracias",
       "texto": "gracias",
-      "url": "assets/pictogramas/expresiones/gracias.png"
+      "url": "assets/pictogramas/expresiones/gracias.png",
+      "categoria": "expresiones"
     },
     {
       "nombre": "Hola",
       "texto": "hola",
-      "url": "assets/pictogramas/expresiones/hola.png"
+      "url": "assets/pictogramas/expresiones/hola.png",
+      "categoria": "expresiones"
     },
     {
       "nombre": "No",
       "texto": "no",
-      "url": "assets/pictogramas/expresiones/no.png"
+      "url": "assets/pictogramas/expresiones/no.png",
+      "categoria": "expresiones"
     },
     {
       "nombre": "Si",
       "texto": "si",
-      "url": "assets/pictogramas/expresiones/si.png"
+      "url": "assets/pictogramas/expresiones/si.png",
+      "categoria": "expresiones"
     }
   ]
 }

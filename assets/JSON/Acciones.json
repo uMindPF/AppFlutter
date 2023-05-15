@@ -3,47 +3,56 @@
     {
       "nombre": "Beber",
       "texto": "beber",
-      "url": "assets/pictogramas/acciones/beber.png"
+      "url": "assets/pictogramas/acciones/beber.png",
+      "categoria": "acciones"
     },
     {
       "nombre": "Comer",
       "texto": "comer",
-      "url": "assets/pictogramas/acciones/comer.png"
+      "url": "assets/pictogramas/acciones/comer.png",
+      "categoria": "acciones"
     },
     {
       "nombre": "Dibujar",
       "texto": "dibujar",
-      "url": "assets/pictogramas/acciones/dibujar.png"
+      "url": "assets/pictogramas/acciones/dibujar.png",
+      "categoria": "acciones"
     },
     {
       "nombre": "Dormir",
       "texto": "dormir",
-      "url": "assets/pictogramas/acciones/dormir.png"
+      "url": "assets/pictogramas/acciones/dormir.png",
+      "categoria": "acciones"
     },
     {
       "nombre": "Ir al cole",
       "texto": "ir al cole",
-      "url": "assets/pictogramas/acciones/irAlCole.png"
+      "url": "assets/pictogramas/acciones/irAlCole.png",
+      "categoria": "acciones"
     },
     {
       "nombre": "Ir al parque",
       "texto": "ir al parque",
-      "url": "assets/pictogramas/acciones/irAlParque.png"
+      "url": "assets/pictogramas/acciones/irAlParque.png",
+      "categoria": "acciones"
     },
     {
       "nombre": "Jugar",
       "texto": "jugar",
-      "url": "assets/pictogramas/acciones/jugar.png"
+      "url": "assets/pictogramas/acciones/jugar.png",
+      "categoria": "acciones"
     },
     {
       "nombre": "Jugar videojuegos",
       "texto": "jugar videojuegos",
-      "url": "assets/pictogramas/acciones/jugarVideojuegos.png"
+      "url": "assets/pictogramas/acciones/jugarVideojuegos.png",
+      "categoria": "acciones"
     },
     {
       "nombre": "Ver la televisión",
       "texto": "ver la televisión",
-      "url": "assets/pictogramas/acciones/verLaTelevision.png"
+      "url": "assets/pictogramas/acciones/verLaTelevision.png",
+      "categoria": "acciones"
     }
   ]
 }

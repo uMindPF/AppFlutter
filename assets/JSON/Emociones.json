@@ -3,57 +3,68 @@
     {
       "nombre": "Asustado",
       "texto": "asustado",
-      "url": "assets/pictogramas/emociones/asustado.png"
+      "url": "assets/pictogramas/emociones/asustado.png",
+      "categoria": "emociones"
     },
     {
       "nombre": "Bien",
       "texto": "bien",
-      "url": "assets/pictogramas/emociones/bien.png"
+      "url": "assets/pictogramas/emociones/bien.png",
+      "categoria": "emociones"
     },
     {
       "nombre": "Confuso",
       "texto": "confuso",
-      "url": "assets/pictogramas/emociones/confuso.png"
+      "url": "assets/pictogramas/emociones/confuso.png",
+      "categoria": "emociones"
     },
     {
       "nombre": "Contento",
       "texto": "contento",
-      "url": "assets/pictogramas/emociones/contento.png"
+      "url": "assets/pictogramas/emociones/contento.png",
+      "categoria": "emociones"
     },
     {
       "nombre": "Enfadado",
       "texto": "enfadado",
-      "url": "assets/pictogramas/emociones/enfadado.png"
+      "url": "assets/pictogramas/emociones/enfadado.png",
+      "categoria": "emociones"
     },
     {
       "nombre": "Mal",
       "texto": "mal",
-      "url": "assets/pictogramas/emociones/mal.png"
+      "url": "assets/pictogramas/emociones/mal.png",
+      "categoria": "emociones"
     },
     {
       "nombre": "Necesito",
       "texto": "necesito",
-      "url": "assets/pictogramas/emociones/necesito.png"
+      "url": "assets/pictogramas/emociones/necesito.png",
+      "categoria": "emociones"
     },
     {
       "nombre": "No gustar",
       "texto": "no gustar",
-      "url": "assets/pictogramas/emociones/noGustar.png"
+      "url": "assets/pictogramas/emociones/noGustar.png",
+      "categoria": "emociones"
     },
     {
       "nombre": "No quiero",
       "texto": "no quiero",
-      "url": "assets/pictogramas/emociones/noQuiero.png"
+      "url": "assets/pictogramas/emociones/noQuiero.png",
+      "categoria": "emociones"
     },
     {
       "nombre": "Quiero",
       "texto": "quiero",
-      "url": "assets/pictogramas/emociones/quiero.png"
+      "url": "assets/pictogramas/emociones/quiero.png",
+      "categoria": "emociones"
     },
     {
       "nombre": "Triste",
       "texto": "triste",
-      "url": "assets/pictogramas/emociones/triste.png"
+      "url": "assets/pictogramas/emociones/triste.png",
+      "categoria": "emociones"
     }
   ]
 }

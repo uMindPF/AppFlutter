@@ -3,47 +3,57 @@
     {
       "nombre": "El",
       "texto": "el",
-      "url": "assets/pictogramas/pronombres/el.png"
+      "url": "assets/pictogramas/pronombres/el.png",
+      "categoria": "pronombres"
+
     },
     {
       "nombre": "Ella",
       "texto": "ella",
-      "url": "assets/pictogramas/pronombres/ella.png"
+      "url": "assets/pictogramas/pronombres/ella.png",
+      "categoria": "pronombres"
     },
     {
       "nombre": "Ellos",
       "texto": "ellos",
-      "url": "assets/pictogramas/pronombres/ellos.png"
+      "url": "assets/pictogramas/pronombres/ellos.png",
+      "categoria": "pronombres"
     },
     {
       "nombre": "Nosotras",
       "texto": "nosotras",
-      "url": "assets/pictogramas/pronombres/nosotras.png"
+      "url": "assets/pictogramas/pronombres/nosotras.png",
+      "categoria": "pronombres"
     },
     {
       "nombre": "Nosotros",
       "texto": "nosotros",
-      "url": "assets/pictogramas/pronombres/nosotros.png"
+      "url": "assets/pictogramas/pronombres/nosotros.png",
+      "categoria": "pronombres"
     },
     {
       "nombre": "Tu",
       "texto": "tu",
-      "url": "assets/pictogramas/pronombres/tu.png"
+      "url": "assets/pictogramas/pronombres/tu.png",
+      "categoria": "pronombres"
     },
     {
       "nombre": "Vosotras",
       "texto": "vosotras",
-      "url": "assets/pictogramas/pronombres/vosotras.png"
+      "url": "assets/pictogramas/pronombres/vosotras.png",
+      "categoria": "pronombres"
     },
     {
       "nombre": "Vosotros",
       "texto": "vosotros",
-      "url": "assets/pictogramas/pronombres/vosotros.png"
+      "url": "assets/pictogramas/pronombres/vosotros.png",
+      "categoria": "pronombres"
     },
     {
       "nombre": "Yo",
       "texto": "yo",
-      "url": "assets/pictogramas/pronombres/yo.png"
+      "url": "assets/pictogramas/pronombres/yo.png",
+      "categoria": "pronombres"
     }
   ]
 }

@@ -47,6 +47,8 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
   flutter_tts: 3.6.3
+  file_picker: ^5.3.0
+  shared_preferences: ^2.1.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -61,6 +63,8 @@ flutter:
     - assets/pictogramas/expresiones/
     - assets/pictogramas/numeros/
     - assets/pictogramas/pronombres/
+    - assets/iconos/
+    - assets/images/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

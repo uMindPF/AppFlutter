@@ -3,47 +3,56 @@
     {
       "nombre": "Uno",
       "texto": "uno",
-      "url": "assets/pictogramas/numeros/1.png"
+      "url": "assets/pictogramas/numeros/1.png",
+      "categoria": "numeros"
     },
     {
       "nombre": "Dos",
       "texto": "dos",
-      "url": "assets/pictogramas/numeros/2.png"
+      "url": "assets/pictogramas/numeros/2.png",
+      "categoria": "numeros"
     },
     {
       "nombre": "Tres",
       "texto": "tres",
-      "url": "assets/pictogramas/numeros/3.png"
+      "url": "assets/pictogramas/numeros/3.png",
+      "categoria": "numeros"
     },
     {
       "nombre": "Cuatro",
       "texto": "cuatro",
-      "url": "assets/pictogramas/numeros/4.png"
+      "url": "assets/pictogramas/numeros/4.png",
+      "categoria": "numeros"
     },
     {
       "nombre": "Cinco",
       "texto": "cinco",
-      "url": "assets/pictogramas/numeros/5.png"
+      "url": "assets/pictogramas/numeros/5.png",
+      "categoria": "numeros"
     },
     {
       "nombre": "Seis",
       "texto": "seis",
-      "url": "assets/pictogramas/numeros/6.png"
+      "url": "assets/pictogramas/numeros/6.png",
+      "categoria": "numeros"
     },
     {
       "nombre": "Siete",
       "texto": "siete",
-      "url": "assets/pictogramas/numeros/7.png"
+      "url": "assets/pictogramas/numeros/7.png",
+      "categoria": "numeros"
     },
     {
       "nombre": "Ocho",
       "texto": "ocho",
-      "url": "assets/pictogramas/numeros/8.png"
+      "url": "assets/pictogramas/numeros/8.png",
+      "categoria": "numeros"
     },
     {
       "nombre": "Nueve",
       "texto": "nueve",
-      "url": "assets/pictogramas/numeros/9.png"
+      "url": "assets/pictogramas/numeros/9.png",
+      "categoria": "numeros"
     }
   ]
 }
