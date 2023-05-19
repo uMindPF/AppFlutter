@@ -45,60 +45,101 @@ class PictogramasPage extends State<Pictogramas> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
-                constraints: BoxConstraints(minHeight: 100),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: FrasePictogramas.getImages(),
+                constraints: const BoxConstraints(
+                  minHeight: 100,
                 ),
-              ),
-              ConstrainedBox(
-                constraints: BoxConstraints(minHeight: 20),
-                child: Text(
-                  FrasePictogramas.getFrase(),
+                padding: const EdgeInsets.only(top: 20),
+                child: DragTarget<Pictograma>(
+                  builder:
+                      (context, List<Pictograma?> candidateData, rejectedData) {
+                    return Container(
+                      width: MediaQuery.of(context).size.width * 0.8,
+                      height: MediaQuery.of(context).size.height * 0.2,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: const Color(0xff4DAA4F),
+                          width: 4,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: FrasePictogramas.getImages(),
+                        ),
+                      ),
+                    );
+                  },
+                  onWillAccept: (data) {
+                    return true;
+                  },
+                  onAccept: (data) {
+                    setState(() {
+                      FrasePictogramas.addPictograma(data);
+                    });
+                  },
                 ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  MaterialButton(
-                    onPressed: () {
-                      setState(() {
-                        FrasePictogramas.limpiarFrase();
-                      });
-                    },
-                    child: Image.asset(
-                      'assets/iconos/borrar.png',
-                      width: 50,
-                      height: 50,
-                    ),
+                  ConstrainedBox(
+                    constraints: const BoxConstraints(minHeight: 20),
+                      child: SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.5,
+                          child: Text(
+                            FrasePictogramas.getFrase(),
+                            textAlign: TextAlign.center,
+                          ),
+                      ),
                   ),
-                  MaterialButton(
-                      onPressed: () {
-                        FlutterTts flutterTts = FlutterTts();
-                        flutterTts.setLanguage("es-ES");
-                        flutterTts.speak(FrasePictogramas.getFrase());
-                      },
-                      child: Image.asset(
-                        'assets/iconos/play.png',
-                        width: 50,
-                        height: 50,
-                      )),
-                  MaterialButton(
-                    onPressed: () {
-                      setState(() {
-                        FrasePictogramas.retroceder();
-                      });
-                    },
-                    child: Image.asset(
-                      'assets/iconos/retroceder.png',
-                      width: 50,
-                      height: 50,
-                    ),
+                  Container(
+                    padding: const EdgeInsets.all(20),
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                      MaterialButton(
+                        onPressed: () {
+                          setState(() {
+                            FrasePictogramas.limpiarFrase();
+                          });
+                        },
+                        child: Image.asset(
+                          'assets/iconos/borrar.png',
+                          width: 40,
+                          height: 40,
+                        ),
+                      ),
+                      MaterialButton(
+                          onPressed: () {
+                            FlutterTts flutterTts = FlutterTts();
+                            flutterTts.setLanguage("es-ES");
+                            flutterTts.speak(FrasePictogramas.getFrase());
+                          },
+                          child: Image.asset(
+                            'assets/iconos/play.png',
+                            width: 35,
+                            height: 35,
+                          )),
+                      MaterialButton(
+                        onPressed: () {
+                          setState(() {
+                            FrasePictogramas.retroceder();
+                          });
+                        },
+                        child: Image.asset(
+                          'assets/iconos/retroceder.png',
+                          width: 40,
+                          height: 40,
+                        ),
+                      ),
+                    ]),
                   )
                 ],
               ),
               Expanded(
                 child: GridView.count(
+                  controller: ScrollController(),
                   crossAxisCount: MediaQuery.of(context).orientation ==
                           Orientation.landscape
                       ? 6
@@ -110,40 +151,43 @@ class PictogramasPage extends State<Pictogramas> {
                           FrasePictogramas.addPictograma(pictogramas[index]);
                         });
                       },
-                      child: Stack(
-                        children: [
-                          if (pictogramas[index].custom == false)
-                            Image.asset(
-                              pictogramas[index].url,
-                              width: 100,
-                              height: 100,
-                            )
-                          else
-                            Image.file(
-                              File(pictogramas[index].url),
-                              width: 100,
-                              height: 100,
+                      child: LongPressDraggable<Pictograma>(
+                        data: pictogramas[index],
+                        dragAnchorStrategy: pointerDragAnchorStrategy,
+                        feedback: Container(
+                          width: MediaQuery.of(context).size.width * 0.15,
+                          height: MediaQuery.of(context).size.height * 0.15,
+                          child: imageWidget(pictogramas[index]),
+                        ),
+                        child: Stack(
+                          children: [
+                            Container(
+                              alignment: Alignment.center,
+                              padding: EdgeInsets.all(
+                                  MediaQuery.of(context).size.width * 0.03),
+                              child: imageWidget(pictogramas[index]),
                             ),
-                          Container(
-                            alignment: Alignment.bottomCenter,
-                            padding: EdgeInsets.all(3),
-                            child: Text(pictogramas[index].nombre),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              changeImage(pictogramas[index], index);
-                            },
-                            child: Container(
-                              alignment: Alignment.topRight,
-                              padding: EdgeInsets.all(3),
-                              child: Image.asset(
-                                'assets/iconos/plus.png',
-                                width: 30,
-                                height: 30,
+                            Container(
+                              alignment: Alignment.bottomCenter,
+                              padding: const EdgeInsets.all(3),
+                              child: Text(pictogramas[index].nombre),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                changeImage(pictogramas[index], index);
+                              },
+                              child: Container(
+                                alignment: Alignment.topRight,
+                                padding: const EdgeInsets.all(3),
+                                child: Image.asset(
+                                  'assets/iconos/plus.png',
+                                  width: 30,
+                                  height: 30,
+                                ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     );
                   }),
@@ -154,6 +198,18 @@ class PictogramasPage extends State<Pictogramas> {
         ),
       ),
     );
+  }
+
+  Widget imageWidget(Pictograma pictograma) {
+    if (pictograma.custom == false) {
+      return Image.asset(
+        pictograma.url,
+      );
+    } else {
+      return Image.file(
+        File(pictograma.url),
+      );
+    }
   }
 
   Future<void> chargePictogramas() async {

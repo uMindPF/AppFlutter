@@ -31,15 +31,11 @@ class FrasePictogramas {
         images.add(Expanded(
             child: Image.file(
           File(pictograma.url),
-          width: 100,
-          height: 100,
         )));
       } else {
         images.add(Expanded(
             child: Image.asset(
           pictograma.url,
-          width: 100,
-          height: 100,
         )));
       }
     }
