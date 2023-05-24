@@ -78,6 +78,9 @@ flutter:
     - family: Childlet
       fonts:
         - asset: fonts/Childlet-Bold.ttf
+    - family: SweetChildish
+      fonts:
+        - asset: fonts/Sweet_Childish.ttf
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

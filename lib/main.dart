@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'uMind',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        fontFamily: 'Childlet',
+        fontFamily: 'SweetChildish',
       ),
       home: const MyHomePage(),
     );
